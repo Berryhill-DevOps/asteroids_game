@@ -112,6 +112,9 @@ def log_state():
     with open("game_state.jsonl", mode) as f:
         f.write(json.dumps(entry) + "\n")
 
+    # John B added logging for debugging
+    #print("logging...")
+
     _state_log_initialized = True
 
 
